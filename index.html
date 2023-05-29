@@ -17,9 +17,9 @@
     <div class="row mt-2">
         <div id="divBotones" class="col text-center">
             
-            <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
-            <button id="btnPedir" class="btn btn-primary">Pedir</button>
-            <button id="btnDetener" class="btn btn-primary">Detener </button>
+            <button id="btnNuevo"   class="btn btn-danger">Nuevo juego</button>
+            <button id="btnPedir"   disable="disabled"   class ="btn btn-primary">Pedir</button>
+            <button id="btnDetener" disable="disabled"   class ="btn btn-primary">Detener </button>
 
         </div>
     </div>
@@ -27,7 +27,7 @@
     <div class="wor container">
         <div class="col">
             <h1>Jugador 1 -<small id="small-jugador"> 0</small></h1>
-            <div id="jugador-cartas">
+            <div id="jugador-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/3C.png"> -->
             </div>
         </div>
@@ -38,17 +38,17 @@
         <div class="col">
 
             <h1>Computadora -<small id="small-computadora"> 0</small></h1>
-            <div id="computadora-cartas">
-                <!-- <img class="carta" src="assets/cartas/2C.png"> -->
-                <!-- <img class="carta" src="assets/cartas/2C.png"> -->
-                <!-- <img class="carta" src="assets/cartas/2C.png"> -->
-                <!-- <img class="carta" src="assets/cartas/2C.png"> -->
+            <div id="computadora-cartas" class="divCartas">
                 <!-- <img class="carta" src="assets/cartas/2C.png"> -->
             </div>
         </div>
     </div>
 
         <script src="assets/js/underscore-min.js"></script>
-        <script src="assets/js/juego.js"></script>
+        <script src="assets/js/juego-min.js"></script>
+        <script>
+            console.log(miModulo);
+            miModulo.nuevoJuego();
+        </script>
 </body>
 </html>
